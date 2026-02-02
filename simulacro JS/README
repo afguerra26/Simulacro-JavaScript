@@ -1,0 +1,45 @@
+#  RestorApp – Frontend Challenge
+
+Simulación frontend de una aplicación de restaurante desarrollada en *JavaScript Vanilla, consumiendo una API simulada con **json-server*.
+
+El proyecto se enfoca en lógica real de frontend, manejo de estado, render dinámico y adaptación a un backend con inconsistencias (escenario realista).
+
+---
+
+## 🛠️ Stack Tecnológico
+
+- HTML5  
+- CSS3 + Bootstrap 5  
+- JavaScript (Vanilla)  
+- json-server  
+- LocalStorage (manejo de sesión)
+
+---
+
+##  Funcionalidades
+
+- Autenticación básica con roles (admin / user)
+- Guardas de rutas (requireUser, requireAdmin)
+- Render dinámico de productos
+- Carrito y creación de pedidos
+- Perfil de usuario con historial de órdenes
+- Dashboard administrativo para gestión de pedidos
+- Manejo de estados de pedido en español
+
+---
+
+## Estructura del Proyecto
+
+```txt
+/js
+ ├─ guard.js        // control de sesión y roles
+ ├─ products.js     // menú, carrito y creación de pedidos
+ ├─ orders.js       // historial de pedidos del usuario
+db.json             // API simulada
+
+
+---
+
+## AUTOR 
+- Andrés Guerra
+- Developer
