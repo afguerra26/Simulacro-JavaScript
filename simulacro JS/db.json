@@ -1,0 +1,168 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin Principal",
+      "email": "admin@restorapp.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Juan Pérez",
+      "email": "juan@correo.com",
+      "password": "123456",
+      "role": "user"
+    },
+    {
+      "id": "28f1",
+      "names": "andres guerra",
+      "email": "afg@gmail.com",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "023c",
+      "name": "andres",
+      "email": "jefe@gmail.com",
+      "password": "1234",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Hamburguesa Clásica",
+      "description": "Carne 100% res, queso cheddar y pan artesanal",
+      "price": 15000,
+      "category": "Burgers",
+      "icon": "🍔",
+      "status": "inactive"
+    },
+    {
+      "id": "39b2",
+      "name": "Hamburguesa Doble carne",
+      "category": "Burgers",
+      "price": 22500,
+      "description": "2 carnes 100% res, queso cheddar y pan artesanal",
+      "icon": "🍔",
+      "status": "inactive"
+    },
+    {
+      "id": "5623",
+      "name": "Hamburguesa De Pollo",
+      "category": "Burgers",
+      "price": 18000,
+      "description": "Carne 100% pollo, queso cheddar y pan artesanal",
+      "icon": "🍔",
+      "status": "active"
+    },
+    {
+      "id": "3a42",
+      "name": "Coca Zero",
+      "category": "Drinks",
+      "price": 5000,
+      "description": "Gaseosa",
+      "icon": "🍽️",
+      "status": "active"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 2,
+      "items": [
+        {
+          "productId": 1,
+          "name": "Hamburguesa Clásica",
+          "price": 15000,
+          "quantity": 1
+        },
+        {
+          "productId": 2,
+          "name": "Papas Fritas",
+          "price": 6000,
+          "quantity": 2
+        }
+      ],
+      "total": 27000,
+      "status": "entregado",
+      "createdAt": "2026-01-30"
+    },
+    {
+      "id": "39de",
+      "userId": "babb",
+      "items": [
+        {
+          "productId": "3a42",
+          "name": "Coca Zero",
+          "price": 5000,
+          "quantity": 1
+        }
+      ],
+      "total": 5000,
+      "status": "pendiente",
+      "createdAt": "2026-02-02T04:35:25.492Z"
+    },
+    {
+      "id": "2a33",
+      "userId": "babb",
+      "items": [
+        {
+          "productId": "3a42",
+          "name": "Coca Zero",
+          "price": 5000,
+          "quantity": 1
+        }
+      ],
+      "total": 5000,
+      "status": "pendiente",
+      "createdAt": "2026-02-02T06:18:31.032Z"
+    },
+    {
+      "id": "96ca",
+      "userId": "28f1",
+      "items": [
+        {
+          "productId": "3a42",
+          "name": "Coca Zero",
+          "price": 5000,
+          "quantity": 3
+        }
+      ],
+      "total": 15000,
+      "status": "pendiente",
+      "createdAt": "2026-02-02T06:27:16.381Z"
+    },
+    {
+      "id": "8e0e",
+      "userId": "28f1",
+      "items": [
+        {
+          "productId": "5623",
+          "name": "Hamburguesa De Pollo",
+          "price": 18000,
+          "quantity": 6
+        }
+      ],
+      "total": 108000,
+      "status": "entregado",
+      "createdAt": "2026-02-02T06:27:19.447Z"
+    },
+    {
+      "id": "ed3c",
+      "userId": "28f1",
+      "items": [
+        {
+          "productId": "5623",
+          "name": "Hamburguesa De Pollo",
+          "price": 18000,
+          "quantity": 6
+        }
+      ],
+      "total": 108000,
+      "status": "cancelado",
+      "createdAt": "2026-02-02T06:27:28.715Z"
+    }
+  ]
+}

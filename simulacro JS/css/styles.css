@@ -1,0 +1,121 @@
+/* Importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+:root {
+    --verde-neon: #00e676;
+    --verde-dark: #00c853;
+    --gris-fondo: #dfdfdf;
+}
+
+body {
+    background-color: var(--gris-fondo);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    background: white;
+}
+
+.card-custom {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    background: white;
+}
+
+.btn-success-custom {
+    background-color: var(--verde-neon);
+    border: none;
+    font-weight: 600;
+    padding: 0.7rem;
+    color: #000;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-success-custom:hover {
+    background-color: var(--verde-dark);
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.brand-logo {
+    color: var(--verde-neon);
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sticky-cart {
+    position: sticky;
+    top: 20px;
+}
+
+/* Estilo general del Navbar */
+.navbar-restorapp {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0.8rem 0;
+}
+
+.navbar-restorapp .navbar-brand {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+/* Enlaces del menú */
+.navbar-restorapp .nav-link {
+    color: #444444;
+    font-weight: 500;
+    margin: 0 15px;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.navbar-restorapp .nav-link:hover {
+    color: #000;
+}
+
+
+.active-link {
+    color: #000 !important;
+    position: relative;
+    font-weight: 700 !important;
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--verde-neon);
+    border-radius: 2px;
+}
+
+/* Icono del logo */
+.bi-utensils-vertical {
+    font-size: 1.4rem;
+}
